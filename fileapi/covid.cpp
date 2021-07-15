@@ -3,10 +3,12 @@
 #include<sys/types.h>
 #include<iostream>
 #include<fcntl.h>
- using namespace std;
+using namespace std;
+
 int main()
-{  int fd1; 
- char b1[]="We are quarantined since one month";  
+{  
+int fd1; 
+char b1[]="We are quarantined since one month";  
 char b2[]="we are not sure when lock down will be released";  
 fd1=creat("covid.txt",0622); 
 if(fd1<0)  

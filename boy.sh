@@ -1,9 +1,8 @@
 #!/bin/bash
-
 file="$1"
 if [ $# -eq 0 ]
 	then
-		echo "$(basename $0) file"
+		echo "$0 file NO arguments"
 		exit 
 fi
 

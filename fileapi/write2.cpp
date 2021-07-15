@@ -11,7 +11,7 @@ int main()
 	f=open("preethi.txt",O_RDWR);
 	read(f,buff,10);
 	write(1,buff,10);
-	lseek(f,20,SEEK_SET);
+	lseek(f,20,SEEK_SET); //random access of data
 	read(f,buff,20);
 	write(1,buff,20);
 }

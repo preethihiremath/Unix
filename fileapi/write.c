@@ -6,6 +6,7 @@ int main()
 {
 int fd,nob;
 char c[]="We are quarantined since one month"; 
+
 char c2[]="we are not sure when lock down will be released";
 fd=open("covid.txt",O_WRONLY,0777); 
 nob= write(fd,c,strlen(c));
